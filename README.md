@@ -50,3 +50,31 @@
 https://image.hanspub.org/Html/19-1541767_35738.htm
 
 https://www.hindawi.com/journals/tswj/2014/267872/
+
+
+
+## 新的肌电方法
+
+金属电极+双选择器+网络分析仪芯片+ESP32+小锂电
+
+https://www.youtube.com/watch?v=FqgwBc7cGZ8
+
+能不能做连续的
+
+下垂和举起手是否能够鲁棒识别
+
+其他身体部分，比如袜子
+
+
+
+这一作老哥后来还做了手表周围的另一只手的触摸识别
+
+https://dl.acm.org/doi/10.1145/2984511.2984568
+
+以及手指是否摸到皮肤的识别
+
+https://dl.acm.org/doi/10.1145/3332165.3347869
+
+和一些导电物体周围贴上电极的识别
+
+https://dl.acm.org/doi/10.1145/3025453.3025842
