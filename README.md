@@ -84,3 +84,15 @@ https://dl.acm.org/doi/10.1145/3025453.3025842
 ## 新的想法
 
 手语识别
+
+目标是识别中文手语，关于中文手语的科普参考 [回形针Vol.154 手语的秘密](https://www.youtube.com/watch?v=vpkHTLhuDqg)
+
+发现手语包括手部动作、肢体语言、面部表情
+
+目前ASL图像识别方面做的比较好的是国外的[SignAll](https://www.signall.us/)，看图片是一个Kinect2和俩Realsense D435i，还有一个铁架子打光+架设摄像头，使用者要戴上一个五彩斑斓的手套。
+
+其实可以先做ABC的识别：这个是一个很傻的一个一个字母翻译的网页[English to Sign Language (ASL) Translator](https://wecapable.com/tools/text-to-sign-language-converter/)
+
+[Hand Talk Translator](https://play.google.com/store/apps/details?id=br.com.handtalk)是逆向的转换，从文本到动漫人物动作的转换
+
+[手语也能机器翻译了！机器学习手势识别功能了解一下](https://blog.51cto.com/u_14815220/3451551) 华为机器学习（ML Kit）提供手部关键点识别服务，可用于手语识别。手部关键点识别服务能识别手部21个关键点，通过每个手指的方向和手语规则作比较去找手语字母表。
