@@ -81,9 +81,7 @@ https://dl.acm.org/doi/10.1145/3025453.3025842
 
 
 
-## 新的想法
-
-手语识别
+## 新的想法-手语识别
 
 目标是识别中文手语，关于中文手语的科普参考 [回形针Vol.154 手语的秘密](https://www.youtube.com/watch?v=vpkHTLhuDqg)
 
