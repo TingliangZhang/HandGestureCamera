@@ -55,6 +55,10 @@ https://www.hindawi.com/journals/tswj/2014/267872/
 
 ## 新的肌电方法
 
+Tomo: Wearable, Low-Cost Electrical Impedance Tomography for Hand Gesture Recognition
+
+https://dl.acm.org/doi/10.1145/2807442.2807480
+
 金属电极+双选择器+网络分析仪芯片+ESP32+小锂电
 
 https://www.youtube.com/watch?v=FqgwBc7cGZ8
