@@ -104,3 +104,17 @@ https://dl.acm.org/doi/10.1145/3025453.3025842
 
 
 申专利、发顶会、打比赛
+
+
+
+## 竞品
+
+[Tenzr: A Fun and Efficient Way to Regain Mobility and Function](https://tenzrhealth.com/) 主打手腕康复，就离谱，感觉是智商税，技术方案是IMU
+
+[TENZR, the next generation gesture recognition wrist-band for VR AR, to be presented at CES 2018](https://www.prnewswire.com/news-releases/tenzr-the-next-generation-gesture-recognition-wrist-band-for-vr-ar-to-be-presented-at-ces-2018-300572362.html)
+
+这个报告里面的BioInteractive Technologies Inc.和上一个是同一家智商税公司，所以这个只是个想法，没做。
+
+
+
+[Myo Gesture Control Armband review](https://www.digitaltrends.com/pc-accessory-reviews/myo-gesture-control-armband-review/) EMG原理，很多年前就比较完善了，但是已经停产了xs，估计无了
