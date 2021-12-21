@@ -1,5 +1,29 @@
 # HandGestureCamera
-手势识别相机手环
+
+
+## 肌电技术方案
+
+
+
+
+
+
+
+## 应用方向
+
+AR手势识别
+
+手语识别
+
+
+
+健康管理：
+
+Use [Skulpt](https://www.skulpt.me/) to measure your body fat percentage and get a personalized workout plan to burn fat and build muscle.
+
+
+
+## 手势识别相机手环
 
 
 
