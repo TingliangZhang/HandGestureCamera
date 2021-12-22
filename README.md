@@ -3,9 +3,9 @@
 
 ## 肌电技术方案
 
+测试仪器：[LCR/阻抗分析仪](https://www.hioki.cn/html/methods/power.html)
 
-
-
+LCR是单一频率下的阻抗分析仪
 
 
 
