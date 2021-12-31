@@ -1177,7 +1177,6 @@
     )
   )
 
-
   (junction (at 157.48 95.25) (diameter 0) (color 0 0 0 0)
     (uuid 294c1327-22fe-4193-aee7-4063f4ca7937)
   )
@@ -1872,7 +1871,7 @@
     (uuid de7fd075-957c-46b2-bffb-645bde5fdae7)
     (property "Reference" "J7" (id 0) (at 182.88 53.34 0))
     (property "Value" "Conn_01x04" (id 1) (at 182.88 55.88 0))
-    (property "Footprint" "" (id 2) (at 182.88 64.77 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (id 2) (at 182.88 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 182.88 64.77 0)
@@ -2052,7 +2051,7 @@
       (reference "J6") (unit 1) (value "Conn_01x08") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical")
     )
     (path "/de7fd075-957c-46b2-bffb-645bde5fdae7"
-      (reference "J7") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J7") (unit 1) (value "Conn_01x04") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/18084a95-067b-48a6-a95c-51150bff3631"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
