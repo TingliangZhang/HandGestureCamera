@@ -9,6 +9,12 @@ LCR是单一频率下的阻抗分析仪
 
 
 
+复现一款PCB：
+
+[AD5933](https://www.analog.com/cn/products/ad5933.html)+[ADG1608](https://www.analog.com/cn/products/adg1608.html) 
+
+
+
 ## 应用方向
 
 AR手势识别
