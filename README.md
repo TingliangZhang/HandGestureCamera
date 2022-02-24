@@ -13,6 +13,30 @@ LCR是单一频率下的阻抗分析仪
 
 [AD5933](https://www.analog.com/cn/products/ad5933.html)+[ADG1608](https://www.analog.com/cn/products/adg1608.html) 
 
+AD5933
+
+I2C通信
+
+
+
+ADG1608
+
+EN高电平使能 A2A1A0选通 每片占用4pin数字输出
+
+
+
+Arduino采用[Seeed XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html)
+
+3+3+EN数字输出，2xI2C，2xUART，正好占满qwq
+
+或者希望引脚宽裕一点直接用[Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html)，还更便宜
+
+
+
+## Arduino
+
+[arduino-ad5933](https://github.com/mjmeli/arduino-ad5933)
+
 
 
 ## 应用方向
