@@ -29,7 +29,11 @@ Arduino采用[Seeed XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-
 
 3+3+EN数字输出，2xI2C，2xUART，正好占满qwq
 
-或者希望引脚宽裕一点直接用[Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html)，还更便宜
+或者希望引脚宽裕一点直接用[Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html)，还更便宜，但是只有3.3V，PCB这边我I2C用的5V
+
+但是由于RP2040 MCU电压就是3.3，其实XIAO的I2C也不一定能work，Arduino板同理
+
+ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PCB设计可能有问题，单5V输入可能会导致开关出错
 
 
 
