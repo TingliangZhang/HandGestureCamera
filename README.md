@@ -37,6 +37,24 @@ ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PC
 
 
 
+本来想用CD74HC4051这种，突然发现这是8:1, 1-channel analog mutliplexer 单通道模拟多路复用器
+
+首先绝对不能用TMUX1308这种数字多路复用器
+
+其他要考虑的事情：
+
+其次驱动电压
+
+内阻
+
+支持的最大电流
+
+
+
+备选项包括：ADG1408YRUZ、CD4051B
+
+
+
 ## Arduino
 
 [arduino-ad5933](https://github.com/mjmeli/arduino-ad5933)
