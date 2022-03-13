@@ -37,7 +37,7 @@ ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PC
 
 
 
-本来想用CD74HC4051这种，突然发现这是8:1, 1-channel analog mutliplexer 单通道模拟多路复用器
+想用CD74HC4051这种 8:1, 1-channel analog mutliplexer 单通道模拟多路复用器
 
 首先绝对不能用TMUX1308这种数字多路复用器
 
@@ -52,6 +52,10 @@ ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PC
 
 
 备选项包括：ADG1408YRUZ、CD4051B
+
+参考文档 [ 多路复用器和信号开关词汇表 (Rev. B)](https://www.ti.com.cn/cn/lit/pdf/zhcaad5) 中的解释，可以知道，其实8：1双通道模拟多路复用器更适合
+
+在TI的[模拟开关 & 多路复用器](https://www.ti.com.cn/zh-cn/switches-multiplexers/analog/overview.html)中可以挑选
 
 
 
