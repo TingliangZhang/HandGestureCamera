@@ -53,9 +53,19 @@ ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PC
 
 备选项包括：ADG1408YRUZ、CD4051B
 
-参考文档 [ 多路复用器和信号开关词汇表 (Rev. B)](https://www.ti.com.cn/cn/lit/pdf/zhcaad5) 中的解释，可以知道，其实8：1双通道模拟多路复用器更适合
+参考文档 [ 多路复用器和信号开关词汇表 (Rev. B)](https://www.ti.com.cn/cn/lit/pdf/zhcaad5) 中的解释，可以知道，其实8：1双通道模拟多路复用器更适合，如[CD4097B](https://www.ti.com/product/CD4097B) - 20-V, 8:1 differential, 1-channel analog multiplexer，或 [MUX36D08](https://www.ti.com.cn/product/cn/MUX36D08) - 1pA 开路泄漏电流、36V、8:1 精密模拟多路复用器
 
-在TI的[模拟开关 & 多路复用器](https://www.ti.com.cn/zh-cn/switches-multiplexers/analog/overview.html)中可以挑选
+在TI的[模拟开关 & 多路复用器](https://www.ti.com.cn/zh-cn/switches-multiplexers/analog/overview.html)中可以挑选，
+
+[TMUX1108](https://www.ti.com.cn/product/cn/TMUX1108) - 3pA 导通状态泄漏电流、5V、±2.5V、8:1、单通道精密多路复用器
+
+[TMUX1208](https://www.ti.com.cn/product/cn/TMUX1208) - 具有 1.8V 输入逻辑的 5V、8:1、单通道通用模拟多路复用器
+
+[TMUX1308](https://www.ti.com.cn/product/cn/TMUX1308) - 具有 1.8V 逻辑电平控制的 5V、8:1、单通道通用多路复用器
+
+最终选定：[TMUX1208](https://www.ti.com.cn/product/cn/TMUX1208) 或 [CD74HC4051](https://www.ti.com.cn/product/cn/CD74HC4051)
+
+[CD74HC4051PWR](https://item.szlcsc.com/328685.html) jlc充足现货，可以优先
 
 
 
