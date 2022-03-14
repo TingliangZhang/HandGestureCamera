@@ -67,6 +67,8 @@ ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PC
 
 [CD74HC4051PWR](https://item.szlcsc.com/328685.html) jlc充足现货，可以优先，另购买平替[74HC4051M/TR SOP-16](https://item.szlcsc.com/520618.html)作为备用，但是封装不同，画两个不同的板子或在同一个板子上面画两个方案。
 
+即[CD74HC4051PWR TSSOP-16](https://item.szlcsc.com/328685.html) + [74HC4051M/TR SOP-16](https://item.szlcsc.com/520618.html) 方案
+
 
 
 ## Arduino
