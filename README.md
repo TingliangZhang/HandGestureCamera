@@ -65,7 +65,7 @@ ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PC
 
 最终选定：[TMUX1208](https://www.ti.com.cn/product/cn/TMUX1208) 或 [CD74HC4051](https://www.ti.com.cn/product/cn/CD74HC4051)
 
-[CD74HC4051PWR](https://item.szlcsc.com/328685.html) jlc充足现货，可以优先
+[CD74HC4051PWR](https://item.szlcsc.com/328685.html) jlc充足现货，可以优先，另购买平替[74HC4051M/TR SOP-16](https://item.szlcsc.com/520618.html)作为备用，但是封装不同，画两个不同的板子
 
 
 
