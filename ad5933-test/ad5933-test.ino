@@ -19,8 +19,8 @@ void setup(void)
   // Begin I2C
   Wire.begin();
 
-  // Begin serial at 9600 baud for output
-  Serial.begin(9600);
+  // Begin serial at 115200 baud for output
+  Serial.begin(115200);
   Serial.println("AD5933 Test Started!");
 
   // Perform initial configuration. Fail if any one of these fail.
