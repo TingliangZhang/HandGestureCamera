@@ -75,6 +75,12 @@ ADG1608额定电源电压：±15 V/12 V/±5 V，3 V逻辑兼容输入，目前PC
 
 [arduino-ad5933](https://github.com/mjmeli/arduino-ad5933)
 
+用[Seed XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/) with Arduino不行，没输出
+
+用[ESP32-DevKitC](https://www.espressif.com/en/products/devkits/esp32-devkitc/overview) with Arduino行，一下子就跑通了，调高波特率到115200还贼快，一句话：ESP32牛逼
+
+ESP32开发板接线：SCL-D22、SDA-D21，5V-VIN，GND-GND
+
 
 
 ## 应用方向
