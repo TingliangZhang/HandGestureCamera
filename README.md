@@ -83,6 +83,10 @@ ESP32开发板接线：SCL-D22、SDA-D21，5V-VIN，GND-GND
 
 
 
+Timer参考ESP32 Arduino Example中的ESP32-Timer-Repeat Timer例程，设置定时器
+
+
+
 ## 应用方向
 
 AR手势识别
