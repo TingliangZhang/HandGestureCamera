@@ -7,8 +7,8 @@ ad5933-test
 #include "AD5933.h"
 
 #define START_FREQ  (80000)
-#define FREQ_INCR   (1000)
-#define NUM_INCR    (40)
+#define FREQ_INCR   (10000)
+#define NUM_INCR    (3)
 #define REF_RESIST  (10000)
 
 double gain[NUM_INCR+1];
@@ -17,8 +17,8 @@ int phase[NUM_INCR+1];
 // 定义MUX的引脚
 int MUX[]={16,17,18,25,26,27};
 
-int * Decode83(int I){
-  int R[]={0,0,0};
+int* Decode83(int I){
+  static int R[]={0,0,0};
   int R0=0;
   int R1=0;
   int R2=0;
@@ -31,7 +31,7 @@ int * Decode83(int I){
     case 5:{R0=1;R1=0;R2=1;}
     case 6:{R0=1;R1=1;R2=0;}
     case 7:{R0=1;R1=1;R2=1;}
-    default:printf("error\n");
+//    default:printf("error\n");
   }
   R[0]=R0;
   R[1]=R1;
@@ -48,7 +48,7 @@ void SetPort1(int P){
   }
 
 void SetPort2(int P){
-  int *R;
+  int* R;
   R=Decode83(P);
   for (int i = 0; i < 3; i++ ){
     digitalWrite(MUX[i+3], R[i]);
@@ -64,9 +64,21 @@ void ClearPins(){
 void Link(int A, int B){
   SetPort1(A);
   SetPort2(B);
+  Serial.print(A);
+  Serial.print(":");
+  Serial.println(B);
+//  Serial.print("\n");
 }
 
-
+void SweepPort(){
+  ClearPins();
+  for (int i = 0; i < 8; i++ ){
+    for (int j = i+1; j < 8; j++ ){
+      Link(i,j);
+      frequencySweepRaw();
+    }
+  }
+  }
 
 
 
@@ -105,17 +117,23 @@ void setup(void)
 
 void loop(void)
 {
-  // Easy to use method for frequency sweep
-  frequencySweepEasy();
+//  frequencySweepEasy();
+  SweepPort();
 
   // Delay
-  delay(5000);
-
-  // Complex but more robust method for frequency sweep
-  frequencySweepRaw();
-
-  // Delay
-  delay(5000);
+  delay(10000);
+  
+//  // Easy to use method for frequency sweep
+//  frequencySweepEasy();
+//
+//  // Delay
+//  delay(5000);
+//
+//  // Complex but more robust method for frequency sweep
+//  frequencySweepRaw();
+//
+//  // Delay
+//  delay(5000);
 }
 
 // Easy way to do a frequency sweep. Does an entire frequency sweep at once and
