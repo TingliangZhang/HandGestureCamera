@@ -87,6 +87,26 @@ Timer参考ESP32 Arduino Example中的ESP32-Timer-Repeat Timer例程，设置定
 
 
 
+20220406 Debug了一下午，发现俩问题：写switch不写break、Enable电平搞错了。一句话我是傻子。。。
+
+[CD74HC4051 数据表、产品信息和支持| 德州仪器TI.com.cn](https://www.ti.com.cn/product/cn/CD74HC4051) Debug，发现是低电平Enable，之前板子画错了qwq，现在接了一根GND到板子的EN上面，就好了
+
+| ENABLE | S2   | S1   | S0   | ON CHANNEL |
+| ------ | ---- | ---- | ---- | ---------- |
+| L      | L    | L    | L    | A0         |
+| L      | L    | L    | H    | A1         |
+| L      | L    | H    | L    | A2         |
+| L      | L    | H    | H    | A3         |
+| L      | H    | L    | L    | A4         |
+| L      | H    | L    | H    | A5         |
+| L      | H    | H    | L    | A6         |
+| L      | H    | H    | H    | A7         |
+| H      | X    | X    | X    | None       |
+
+gg，刚刚静电电了一下手环，我怀疑MUX被电坏了或者是芯片完蛋了。。。Z变成了3-4w，最低1w
+
+
+
 ## 应用方向
 
 AR手势识别

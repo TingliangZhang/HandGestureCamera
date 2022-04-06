@@ -71,13 +71,13 @@ void Link(int A, int B){
 }
 
 void SweepPort(){
-  ClearPins();
   for (int i = 0; i < 8; i++ ){
     for (int j = i+1; j < 8; j++ ){
       Link(i,j);
       frequencySweepRaw();
     }
   }
+  ClearPins();
   }
 
 
