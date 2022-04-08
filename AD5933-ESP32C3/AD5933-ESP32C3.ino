@@ -16,9 +16,10 @@ ad5933-test
 double gain[NUM_INCR+1];
 int phase[NUM_INCR+1];
 
-// 定义MUX的引脚
-int MUX[]={16,17,18,25,26,27};
+// 定义MUX的引脚-ESP32-C3
+int MUX[]={19,18,4,7,8,9};
 
+// from lhy : try this function:https://www.arduino.cc/reference/en/language/functions/bits-and-bytes/bitread/
 int* Decode83(int I){
   static int R[]={0,0,0};
   int R0=0;
