@@ -71,8 +71,9 @@ void Link(int A, int B){
   SetPort1(A);
   SetPort2(B);
   Serial.print(A);
+  Serial.print("-");
+  Serial.print(B);
   Serial.print(":");
-  Serial.println(B);
 //  Serial.print("\n");
 }
 
@@ -197,26 +198,30 @@ void frequencySweepRaw() {
             Serial.println("Could not get raw frequency data...");
         }
 
-        // Print out the frequency data
-        Serial.print(cfreq);
-        Serial.print(": R=");
-        Serial.print(real);
-        Serial.print("/I=");
-        Serial.print(imag);
+//        // Print out the frequency data
+//        Serial.print(cfreq);
+//        Serial.print(": R=");
+//        Serial.print(real);
+//        Serial.print("/I=");
+//        Serial.print(imag);
 
         // Compute impedance
         double magnitude = sqrt(pow(real, 2) + pow(imag, 2));
         double impedance = 1/(magnitude*gain[i]);
-        Serial.print("  |Z|=");
-        Serial.println(impedance);
+//        Serial.print("  |Z|=");
+//        Serial.println(impedance);
+        if(i==NUM_INCR){
+          Serial.println(impedance);
+          }
 
         // Increment the frequency
         i++;
         cfreq += FREQ_INCR/1000;
         AD5933::setControlMode(CTRL_INCREMENT_FREQ);
     }
-
-    Serial.println("Frequency sweep complete!");
+    
+    
+//    Serial.println("Frequency sweep complete!");
 
     // Set AD5933 power mode to standby when finished
     if (!AD5933::setPowerMode(POWER_STANDBY))
