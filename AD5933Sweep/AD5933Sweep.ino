@@ -38,9 +38,10 @@ int* Decode83(int I){
     case 7:{R0=1;R1=1;R2=1;break;}
 //    default:printf("error\n");
   }
-  R[0]=R0;
+  R[2]=R0;
   R[1]=R1;
-  R[2]=R2;
+  R[0]=R2;
+//  Attention: S2 is High bit
   return R;
   }
 
@@ -118,6 +119,9 @@ void setup(void)
     Serial.println("Calibrated!");
   else
     Serial.println("Calibration failed...");
+
+  // Delay
+  delay(1000);
 }
 
 void loop(void)
@@ -125,8 +129,8 @@ void loop(void)
 //  frequencySweepEasy();
   SweepPort();
 
-  // Delay
-  delay(10000);
+//  // Delay
+//  delay(1000);
   
 //  // Easy to use method for frequency sweep
 //  frequencySweepEasy();
