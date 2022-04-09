@@ -142,6 +142,16 @@ R/I  中间原始数据的实部虚部
 
 
 
+Plotly Python Open Source Graphing Library 示例
+
+[2D Histograms](https://plotly.com/python/2D-Histogram/) 二维直方图表示可视化后的二维空间分布
+
+[Histograms](https://plotly.com/python/histograms/) 为原始数据的可视化直方图，28个数据按照两两之间距离从小到大有序排列
+
+[ML Regression](https://plotly.com/python/ml-regression/) 训练过程和效率可视化
+
+
+
 ## 应用方向
 
 AR手势识别
