@@ -17,7 +17,10 @@ double gain[NUM_INCR+1];
 int phase[NUM_INCR+1];
 
 // 定义MUX的引脚
-int MUX[]={16,17,18,25,26,27};
+// ESP32-DevKit
+//int MUX[]={16,17,18,25,26,27};
+// Arduino Mega 2560
+int MUX[]={2,3,4,5,6,7};
 
 int* Decode83(int I){
   static int R[]={0,0,0};
