@@ -103,9 +103,36 @@ Timer参考ESP32 Arduino Example中的ESP32-Timer-Repeat Timer例程，设置定
 | L      | H    | H    | H    | A7         |
 | H      | X    | X    | X    | None       |
 
+注意编码中S2是最高位！！！第一版本出错是因为编码反了。
+
 gg，刚刚静电电了一下手环，我怀疑MUX被电坏了或者是芯片完蛋了。。。Z变成了3-4w，最低1w
 
 
+
+刚刚换成Mega2560测试了一圈，感觉还是采样频率的问题，Frequency越小，比如1kHz，扫描速度越慢。现在调成10kHz甚至20kHz就好很多了，累加一次，准确度目前看是够用的
+
+
+
+## Python数据读取和可视化
+
+用[JupyterLab](https://jupyter.org/)+[Plotly Python Graphing Library](https://plotly.com/python/)做可交互的实时数据可视化。
+
+Pyserial读取收到的数据，以下为数据格式的说明
+
+```
+0:1
+100: R=348/I=1914  |Z|=102512.95
+110: R=102/I=2118  |Z|=93806.21
+Frequency sweep complete!
+```
+
+A:B 从0-8端口中选通两个，测量这两个端口之间的阻抗。
+
+100: / 101: 当前扫描频率，单位为kHz
+
+R/I  中间原始数据的实部虚部
+
+|Z| 测得的阻抗数据，可以进行归一化，由于短路情况下|Z|= REF_RESIST 即10000
 
 ## 应用方向
 
