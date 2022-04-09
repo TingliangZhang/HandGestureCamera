@@ -8,9 +8,9 @@ ad5933-test
 #include <Wire.h>
 #include "AD5933.h"
 
-#define START_FREQ  (80000)
+#define START_FREQ  (100000)
 #define FREQ_INCR   (10000)
-#define NUM_INCR    (3)
+#define NUM_INCR    (1)
 #define REF_RESIST  (10000)
 
 double gain[NUM_INCR+1];
