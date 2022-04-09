@@ -3,6 +3,8 @@ ad5933-test
     Reads impedance values from the AD5933 over I2C and prints them serially.
 */
 
+//ESP32 I2C SDA default is GPIO 21,SCL default is GPIO 22
+
 #include <Wire.h>
 #include "AD5933.h"
 
