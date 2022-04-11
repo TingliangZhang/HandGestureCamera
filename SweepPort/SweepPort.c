@@ -13,14 +13,14 @@ int* Decode83(int I){
   int R1=0;
   int R2=0;
   switch (I){
-    case 0:{R0=0;R1=0;R2=0;}
-    case 1:{R0=0;R1=0;R2=1;}
-    case 2:{R0=0;R1=1;R2=0;}
-    case 3:{R0=0;R1=1;R2=1;}
-    case 4:{R0=1;R1=0;R2=0;}
-    case 5:{R0=1;R1=0;R2=1;}
-    case 6:{R0=1;R1=1;R2=0;}
-    case 7:{R0=1;R1=1;R2=1;}
+    case 0:{R0=0;R1=0;R2=0;break;}
+    case 1:{R0=0;R1=0;R2=1;break;}
+    case 2:{R0=0;R1=1;R2=0;break;}
+    case 3:{R0=0;R1=1;R2=1;break;}
+    case 4:{R0=1;R1=0;R2=0;break;}
+    case 5:{R0=1;R1=0;R2=1;break;}
+    case 6:{R0=1;R1=1;R2=0;break;}
+    case 7:{R0=1;R1=1;R2=1;break;}
 //    default:printf("error\n");
   }
   R[0]=R0;
