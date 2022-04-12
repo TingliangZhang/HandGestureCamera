@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "HandGesture")(type "KiCad")(uri "${KIPRJMOD}/HandGesture.kicad_sym")(options "")(descr ""))
+)
